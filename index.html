@@ -1,58 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/parallax.css" />
-    <link rel="stylesheet" href="./css/stars.css"> 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="/js/underscore.js"></script>
-    <script src="/js/index.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Abraham</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+
+    <!-- CSS ANIMATED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
-     <div class="back-stars">
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-    <div id='title'>
-        <span>
-            PURE CSS
-        </span>
-        <br>
-        <span>
-            PARALLAX PIXEL STARS
-        </span>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content animated fadeInDown delay-2s">
+      <img src="img/LOGO-ASMZOOM.png" alt="LOGO-ASM" class="logo">
+      <h3 class="title">Portfolio Abraham Serrano</h3>
+      <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nisi unde similique dolores
+        commodi fugit corrupti pariatur dolor doloremque, rem, earum, et ea. At, alias voluptatem possimus maiores velit
+        sint.</p>
     </div>
-</div> 
+  </header>
 
+  <!-- SERVICES -->
+  <section class="services text-center">
+    <h3 class="title">Services</h3>
+    <div class="container grid-5">
+      <div class="">
+        <img src="https://img.icons8.com/color/144/000000/javascript.png"></img>
+        <h3>JavaScript</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel esse molestiae eum, asperiores consequuntur
+          aspernatur earum totam dolor sit omnis nemo harum ea assumenda magni sint sunt aut quaerat saepe.</p>
+      </div>
+      <div class="">
+        <img src='https://img.icons8.com/color/144/000000/html-5.png'></img>
+        <h3>Html</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel esse molestiae eum, asperiores consequuntur
+          aspernatur earum totam dolor sit omnis nemo harum ea assumenda magni sint sunt aut quaerat saepe.</p>
+      </div>
+      <div class="">
+        <img src='https://img.icons8.com/color/144/000000/nodejs.png'></img>
+        <h3>NodeJS</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel esse molestiae eum, asperiores consequuntur
+          aspernatur earum totam dolor sit omnis nemo harum ea assumenda magni sint sunt aut quaerat saepe.</p>
+      </div>
+      <div class="">
+        <img src='https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png'></img>
+        <h3>Java</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel esse molestiae eum, asperiores consequuntur
+          aspernatur earum totam dolor sit omnis nemo harum ea assumenda magni sint sunt aut quaerat saepe.</p>
+      </div>
+      <div class="">
+        <img src='https://img.icons8.com/color/144/000000/git.png'></img>
+        <h3>Git</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel esse molestiae eum, asperiores consequuntur
+          aspernatur earum totam dolor sit omnis nemo harum ea assumenda magni sint sunt aut quaerat saepe.</p>
+      </div>
 
-<div class="section">
-        <div class="oop"></div>
-        <div class="fixed">
-          <h1 class="large">Parallax Background</h1>
-          <p>No JavaScript, Start scrolling</p>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="about bg-light">  <!--  porque el fondo es blanco o para colocar el fondo -->
+    <div class="container text-center"> <!--  container es para colocar un espaciado -->
+      <div class="grid-2"> <!-- es para separar por columnas  -->
+        <div class="center">
+          <i class="fas fa-code fa-10x"></i>
+        </div>
+        <div>
+          <h3 class="title">Programming Courses</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore. Beatae fuga, quae odio sint ratione deserunt eius. Illo, eaque?</p>
         </div>
       </div>
-      <div class="section">
-        <div class="fixed">
-          <h1>The Day My Mother Forgot to Cry</h1>
-          <p>I shudder to recall that dreadful Diwali night of October 2007, when my mother knocked our bed room at the dead of the night enquiring where the toilet was. She looked disoriented and totally confused. Unable to understand the cause for her abnormal behaviour, we thought she was still in a semi-sleep state and showed her the toilet. But even after coming out of toilet she was unable to find her way to her bed room.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT 2 -->
+  <section class="about bg-dark">  <!--  porque el fondo es blanco o para colocar el fondo -->
+    <div class="container text-center"> <!--  container es para colocar un espaciado -->
+      <div class="grid-2"> <!-- es para separar por columnas  -->
+        <div>
+            <h3 class="title">Programming Courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore. Beatae fuga, quae odio sint ratione deserunt eius. Illo, eaque?</p>
+          </div>
+        <div class="center">
+          <i class="fas fa-code fa-10x"></i>
         </div>
       </div>
-      <div class="section">
-        <div class="p fixed">Sensing that something is seriously amiss, we took her next day to the nearby nursing home for diagnosis and treatment. She was immediately referred to a neurosurgeon and after a MRI scan it was confirmed that she suffered a brain stroke. The report showed certain grey patches which the doctor referred to as clots have affected her memory totally. The doctor informed that the memory loss is irreversible due to her old age. He, however, assured that further, damage to the brain can be arrested with drugs.</div>
-      </div>
-      <div class="section">
-        <div class="p fixed">That was the beginning of the slow end for my mother. As the disease got worsened, she forgot everything. Lost control of her body functions and finally, failed to recognize anyone except my wife who used to take care of her like a mother taking care of her baby. She used to feed her, change her diapers, dress her, give her bath, brush her hair, and also help her to sleep.</div>
-      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center bg-light">
+    <p>Abraham Serrano &copy; 2019 - All right reserved</p>
+  </footer>
 </body>
 
 </html>
