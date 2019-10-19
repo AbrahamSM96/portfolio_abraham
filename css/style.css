@@ -5,6 +5,26 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+h4{
+    /* font-family: 'PT-Sans', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: rgb(55, 230, 176);
+}
+
+span .logoImg{
+    background-image: url(/img/ICON-ASM-SINFONDO.png);
+    
+}
+
 .header::after{ /* after permite colocar contenido despues de este elemnto */
     content: '';
     height: 100vh;
@@ -33,14 +53,15 @@ body{
 .header-content{
     position: absolute; /* para que el contenido no este en bloque, para que este adentro de la imagen */
     z-index: 1; /* para pasar hacia adelante de la imagen el parrafo y logo */
-    top:10%;
+    top:7%;
     left: 50%; /* para que se centre */
-    margin-top: 105px ; /* para que se centre */
+    margin-top: 20px ; /* para que se centre */
     margin-left: -145px; /* para centrarlo */
     text-align: center;
     width: 300px;
     height: 350px; 
     transition: all 1000ms;
+    
 }
 
 .header-content .logo{
@@ -52,15 +73,64 @@ body{
     /* font-family: 'PT-Sans', sans-serif; */
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Oxygen', sans-serif;
-
     font-size: 2rem;
 }
 
 .text{
     line-height: 1.7; /*es el interlineado */
     margin-top: 1rem; /* para separarlo del titulo  */
+    /* text-align: justify; */
+    font-size: 1.3rem;
+    color: rgb(240, 30, 83);
+    text-align: center;
+
+}
+/* bacground del text */
+ .background{ 
+    background-color: rgba(8, 8, 8, 0.808);
+    border-radius: 4%;
+    padding: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 10px;
 }
 
+.background-p-email{
+    background-color: rgba(8, 8, 8, 0.808);
+    border-radius: 4%;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-color:  rgb(55, 230, 176);
+    border-style: solid;
+}
+.background-p-email a{
+    text-decoration: none;
+    color: rgb(55, 230, 176);
+}
+
+.icon-a a{
+    padding: 8px;
+    padding-left: 3em;
+    padding-right: 1em;
+    padding-top: 4px;
+}
+
+.h3-hover a{
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.h3-hover:hover a{
+    color: rgb(55, 230, 176);
+    cursor: pointer;
+    margin: 0px;
+}
 .container{
     max-width: 960px; /* tamaño maximo del sitio */
     margin: auto; /* para que se centre */
@@ -71,6 +141,12 @@ body{
 .grid-5{
     display: grid; /* esto divide el contenido pero no sabe en cuantas partes*/
     grid-template-columns: repeat(5, 1fr); /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+    grid-gap: 20px;
+}
+
+.grid-3{
+    display: grid; /* esto divide el contenido pero no sabe en cuantas partes*/
+    grid-template-columns: repeat(3, 1fr); /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
     grid-gap: 20px;
 }
 
@@ -93,17 +169,28 @@ body{
     color: #fff;
 }
 
-.services{
+.skills{
     padding: 2rem 0; /* espaciado */
 }
 
+
+
 footer{
-    padding: 2.2rem;
+    padding: rem;
 }
 
 footer p{
     margin: 0;
 }
+
+footer img{
+    width: 5em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+    align-content: stretch;
+}
+
 
 @media(max-width: 560px){ /* ancho maximo de 560px para moviles */
     .header::after{
@@ -122,20 +209,26 @@ footer p{
 
     .header-content .text{
         display: none; /* quitar de la vista el text en moviles */
+        
     }
 
     .grid-5, .grid-2{
         grid-template-columns:1fr ;
     }
 
-    .services{
+    .skills{
         padding: 1rem 1rem;
     }
 }
 
 @media(max-height: 500px){
     .header-content .text{
-        display:none;
+        padding: 1px;
+        padding-left: 6em;
+        padding-right: 6em;
+        margin-left: -150px;
+        margin-right: -150px;
+        margin-top: 10px;;
     }
     .header-content{
         top:0;
@@ -144,7 +237,7 @@ footer p{
 
 @media(max-width: 736px){ /* ancho maximo de 560px para moviles */
     .header::after{
-        height: 80vh;
+        height: 75vh;
     }
 
     .header-content{
@@ -159,13 +252,14 @@ footer p{
 
     .header-content .text{
         display: none; /* quitar de la vista el text en moviles */
+
     }
 
     .grid-5, .grid-2{
         grid-template-columns:1fr ;
     }
 
-    .services{
+    .skills{
         padding: 2rem 2rem;
     }
 }
@@ -193,7 +287,7 @@ footer p{
         grid-template-columns:1fr ;
     }
 
-    .services{
+    .skills{
         padding: 2rem 2rem;
     }
 }
@@ -221,8 +315,11 @@ footer p{
         grid-template-columns:1fr ; /* para que los services queden abajo en ilera*/
     }
 
-    .services{
+    .skills{
         padding: 2rem 2rem; /* espaciado de los services*/
     }
+    
 }
+
+
 
