@@ -176,12 +176,21 @@ span .logoImg{
 
 
 footer{
-    padding: 2.2rem;
+    padding: rem;
 }
 
 footer p{
     margin: 0;
 }
+
+footer img{
+    width: 5em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+    align-content: stretch;
+}
+
 
 @media(max-width: 560px){ /* ancho maximo de 560px para moviles */
     .header::after{
@@ -309,5 +318,8 @@ footer p{
     .skills{
         padding: 2rem 2rem; /* espaciado de los services*/
     }
+    
 }
+
+
 
