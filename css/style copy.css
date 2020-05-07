@@ -1,0 +1,450 @@
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  /* font-family: 'PT-Sans', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: rgb(55, 230, 176);
+}
+
+span .logoImg {
+  background-image: url(/img/ICON-ASM-SINFONDO.png);
+}
+
+section {
+  padding: 1.5vw;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+}
+
+footer {
+  padding: 1vw 10%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+.title {
+  /* font-family: 'PT-Sans', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-header {
+  /* text-align: justify; */
+  color: rgb(55, 230, 176);
+  text-align: center;
+  font-size: 23px;
+}
+
+.container {
+  max-width: 100%;
+  /* tamaño maximo del sitio */
+  margin: auto;
+  /* para que se centre */
+  /* overflow: hidden;  */
+  /* padding: 4rem 1rem; espaciado interno */
+}
+
+.section-green {
+  background-color: rgb(38, 196, 146);
+  /* height: 100vh; */
+}
+
+/* -------HEADER----- */
+
+.header::after {
+  /* after permite colocar contenido despues de este elemnto */
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
+  background-size: cover;
+  /* el maximo tamaño del elemento */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  /* para que se vea borroso */
+  -webkit-filter: blur(10px);
+  /* para que compruebe que esta en  google chrome */
+  transition: all 1000ms;
+  /* transicion de todo de 1000 milisegundos */
+}
+
+.header:hover::after {
+  /* alteramos despues del after, quita el filtro */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  /* para que compruebe que esta en  google chrome */
+}
+
+.header:hover .header-content {
+  /* cuando el cursor este posicionado sobre el elemento */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  /* para que compruebe que esta en  google chrome */
+}
+
+.header-content {
+  display: block;
+  position: absolute;
+  /* para que el contenido no este en bloque, para que este adentro de la imagen */
+  z-index: 1;
+  /* para pasar hacia adelante de la imagen el parrafo y logo */
+  top: 15%;
+  left: 50%;
+  /* para que se centre */
+  margin-top: 10px;
+  /* para que se centre */
+  margin-left: -145px;
+  /* para centrarlo */
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  transition: all 1000ms;
+}
+
+.header-content .logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* -------END HEADER----- */
+
+/* -------SKILLS----- */
+
+.container-skills {
+  position: relative;
+}
+
+.title-skill {
+  position: relative;
+  text-align: center;
+  margin: 2% 0px 3% 0px;
+}
+
+.skills-container {
+  margin: 2% 0px;
+  width: 100%;
+}
+
+.img-icons {
+  width: 144px;
+  height: 144px;
+}
+
+.skill-p {
+  font-size: 1em;
+}
+
+/* -------END SKILLS----- */
+
+/* -------PROJECT----- */
+.project {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title-project {
+  position: relative;
+  text-align: center;
+  margin: 2% 0px 3% 0px;
+}
+
+.about-container {
+  margin: 2% 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-square {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.square {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bg-light {
+  background: #fff;
+  /* height: 100vh; */
+  color: #333;
+}
+
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* -------END PROJECT----- */
+
+/* ------SECTION-ABOUT----- */
+.p-about-me {
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.about-img {
+  width: 35%;
+  padding-top: 50%;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  /* padding-top: 100%; */
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 2.5%;
+  overflow: hidden;
+}
+
+/* Pulse Shrink */
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse-shrink:hover,
+.hvr-pulse-shrink:focus,
+.hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* ------END SECTION-ABOUT----- */
+
+/* ------GRID----- */
+.grid-5 {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(5, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 10px;
+}
+
+.grid-3 {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(3, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 5% 3%;
+  margin: 0px 5%;
+}
+
+.grid-4 {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(4, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 4% 4%;
+}
+
+.grid-2 {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(2, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 2% 2%;
+}
+
+/* .item {
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: white;
+} */
+
+/* ------CONTACT----- */
+
+.bg-dark {
+  background: #2f3542;
+  color: #fff;
+}
+
+.social-icons {
+  display: inline-flex;
+}
+
+.linkedin-container {
+  margin: 10px 15px;
+}
+
+.facebook-container {
+  margin: 10px 15px;
+}
+
+.background-p-email {
+  background-color: rgba(8, 8, 8, 0.808);
+  border-radius: 4%;
+  padding: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-color: rgb(55, 230, 176);
+  border-style: solid;
+  margin: 0px 8em;
+}
+
+.background-p-email a {
+  text-decoration: none;
+  color: rgb(55, 230, 176);
+}
+
+.h3-hover a {
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.h3-hover:hover a {
+  color: rgb(55, 230, 176);
+  cursor: pointer;
+  margin: 0px;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+/* ------END CONTACT----- */
+
+/* ------FOOTER----- */
+
+.copyright {
+  color: #777777;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: #eb5e28;
+}
+
+.heart {
+  color: #eb5e28;
+  animation: heathing 1s ease infinite;
+}
+
+@keyframes heathing {
+  0% {
+    transform: scale(0.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+/* ------END FOOTER----- */
