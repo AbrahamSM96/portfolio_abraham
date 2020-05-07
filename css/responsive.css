@@ -1,375 +1,135 @@
-@media(max-width: 560px){ /* ancho maximo de 560px para moviles */
-    .header::after{
-        height: 50vh; /* para el header o sea el logo*/
-    }
+@media only screen and (max-width: 1024px) {
+  /* ancho maximo de 560px para moviles */
 
-    .header-content{
-        top: 5%; /* espacio de arriba*/
-        margin-top: 5px;
-    }
-
-    .header-content .logo{
-        height: 140px; /* cambiar tamaño del logo*/
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-        
-    }
-
-    .grid-5, .grid-2, .grid-3{
-        grid-template-columns:1fr ;
-    }
-
- 
-
-
-
-    .skills{
-        padding: 1rem 1rem;
-    }
+  .projects__container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__item {
+    margin: 0 auto;
+  }
+  .about__container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media(max-height: 500px){
-    .header-content .text{
-        padding: 1px;
-        padding-left: 6em;
-        padding-right: 6em;
-        margin-left: -150px;
-        margin-right: -150px;
-        margin-top: 10px;;
-    }
-
-    h3{
-        font-size: 2em;
-    }
-
-        .skill-p{
-        font-size: 2em;
-    }
-
-    .header-content{
-        top:0;
-    }
-}
-/* iPhone XS Max */
-
-@media(max-width: 736px){ /* ancho maximo de 560px para moviles */
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 140vh;
-    }
-
-    .background-p-email{
-        margin: 0px 10%;
-    }
-
-
-    footer{
-        justify-content: center;
-    }
-
-    .grid-5, .grid-2, .grid-3{
-        grid-template-columns:1fr ;
-    }
-
-    .skills{
-        padding: 2rem 2rem;
-    }
+@media only screen and (max-width: 914px) {
+  /* ancho maximo de 560px para moviles */
+  .skills__container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-
-
-
+@media only screen and (max-width: 768px) {
+  .skills__container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects__item {
+    margin: 0px;
+  }
+  .about__container-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about__container--img {
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* ancho maximo de 560px para moviles */
+  .projects__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (device-width: 320px) 
-  and (device-height: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 282vh;
-    }
-
-    .background-p-email{
-        margin: 0px 5%;
-    }
-
-    footer{
-        justify-content: center;
-    }
+@media only screen and (max-width: 479px) {
+  .skills__container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__container-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
+    justify-content: center;
+  }
 }
 
+@media only screen and (max-width: 414px) {
+  .projects__item {
+    width: auto;
+  }
+  .projects__container-grid .projects__item figure {
+    margin: 0 auto;
+  }
 
+  .about__container .about__container--description p {
+    text-align: center;
+  }
+}
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (max-width: 375px) {
+  .skills__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+  }
+  .projects__item {
+    width: auto;
+  }
+  .projects__container-grid .projects__item figure {
+    margin: 0 auto;
+  }
+
+  .about__container .about__container--description p {
+    text-align: center;
+  }
+  footer {
+    justify-content: center;
+  }
+}
 
 /* Portrait and Landscape */
-@media only screen 
-  and (device-width: 320px) 
-  and (device-height: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 320px) {
+  .skills__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects__container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+  }
+  .projects__item {
+    display: grid;
+  }
+  .projects__container-grid .projects__item figure {
+    width: 70%;
+    height: 160px;
+  }
 
-    .header::after{
-        height: 100vh;
-    }
+  .contact__container--icons .container__icons {
+    display: block;
+  }
+  .contact__container--icons .container__icons div {
+    padding: 5px 0px;
+  }
 
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 180vh;
-    }
-
-    .background-p-email{
-        margin: 0px 5%;
-    }
-
-
-    footer{
-        justify-content: center;
-    }
-
+  footer {
+    justify-content: center;
+  }
 }
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 172vh;
-    }
-
-    .background-p-email{
-        margin: 0px 10%;
-    }
-
-
-    footer{
-        justify-content: center;
-    }
-}
-
-
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-    h2{
-        font-size: 2em;
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 168vh;
-    }
-
-    .background-p-email{
-        margin: 0px 15%;
-    }
-
-    footer{
-        justify-content: center;
-    }
-}
-
-/* iPhone XS  */
-
-@media only screen
-and (device-width: 375px) 
-and (device-height: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  { /* ancho maximo de 560px para moviles */
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-    .background-p-email{
-        margin: 0px 10%;
-    }
-
-    .bg-light{
-        height: 141vh;
-    }
-
-    .grid-5, .grid-2 , .grid-3{
-        grid-template-columns:1fr ;
-    }
-
-    .skills{
-        padding: 2rem 2rem;
-    }
-
-    .p-about-me{
-        letter-spacing: 0px;
-        margin: 20px;
-    }
-
-    footer{
-        justify-content: center;
-    }
-}
-
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-    .header::after{
-        height: 100vh;
-    }
-
-    .header-content{
-        top: 20%;
-    }
-
-    .header-content .logo{
-        height: 140px;
-        width: 140px;
-    }
-
-    .header-content .text{
-        display: none; /* quitar de la vista el text en moviles */
-    }
-
-
-    .skill-p{
-        font-size: 20px;
-    }
-
-    .bg-light {
-        height: 174vh;
-    }
-
-    .background-p-email{
-        margin: 0px 5%;
-    }
-
-
-    footer{
-        justify-content: center;
-    }
-}
-
