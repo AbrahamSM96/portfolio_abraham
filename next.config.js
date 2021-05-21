@@ -6,7 +6,7 @@ module.exports = withPlugins([
   {
     basePath,
     assetPrefix: isProd
-      ? 'https://cdn.statically.io/gh/AbrahamSM96/https://abrahamsm96.github.io/master/'
+      ? 'https://cdn.statically.io/gh/AbrahamSM96/https://abrahamsm96.github.io/portfolio_abraham/master/'
       : ''
   }
 ])
