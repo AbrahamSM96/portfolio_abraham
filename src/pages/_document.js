@@ -21,6 +21,10 @@ class MyDocument extends Document {
             name="description"
             content="Abraham Serrano Montiel Frontend Developer Page"
           />
+          <link
+            rel="stylesheet"
+            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/style.css`}
+          />
         </Head>
         <body data-spy="scroll" data-target="#navbar" data-offset="56">
           <Main />
