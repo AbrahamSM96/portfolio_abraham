@@ -1,0 +1,456 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: rgb(55, 230, 176);
+}
+
+span .logoImg {
+  background-image: url(/img/ICON-ASM-SINFONDO.png);
+}
+
+/* -------HEADER----- */
+
+.header::after {
+  /* after permite colocar contenido despues de este elemnto */
+  content: '';
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
+  background-size: cover;
+  /* el maximo tamaño del elemento */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  /* para que se vea borroso */
+  -webkit-filter: blur(10px);
+  /* para que compruebe que esta en  google chrome */
+  transition: all 1000ms;
+  /* transicion de todo de 1000 milisegundos */
+}
+
+.header:hover::after {
+  /* alteramos despues del after, quita el filtro */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  /* para que compruebe que esta en  google chrome */
+}
+
+.header:hover .header-content {
+  /* cuando el cursor este posicionado sobre el elemento */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  /* para que compruebe que esta en  google chrome */
+}
+
+.header__content {
+  display: block;
+  position: absolute;
+  color: #fff;
+  /* para que el contenido no este en bloque, para que este adentro de la imagen */
+  z-index: 1;
+  /* para pasar hacia adelante de la imagen el parrafo y logo */
+  top: 15%;
+  left: 50%;
+  /* para que se centre */
+  margin-top: 10px;
+  /* para que se centre */
+  margin-left: -145px;
+  /* para centrarlo */
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  transition: all 1000ms;
+}
+
+.header .header__content img {
+  height: 100px;
+  width: 100px;
+}
+
+.header .header__content h3 {
+  font-size: 2.3em;
+}
+.header .header__content h4 {
+  font-size: 1.5em;
+}
+.header .header__content p {
+  color: rgb(55, 230, 176);
+  text-align: center;
+  font-size: 23px;
+}
+
+/* -------END HEADER----- */
+
+/* -------SKILLS----- */
+
+.skills__container {
+  background-color: rgb(38, 196, 146);
+  color: #fff;
+  justify-items: center;
+  min-height: 400px;
+  min-width: 100%;
+}
+
+.skills__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3em;
+  margin: 0px;
+  padding: 30px 0px;
+}
+
+.skills__container-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0px 50px;
+}
+
+.skills__item {
+  display: grid;
+}
+
+.skills__item img {
+  width: 144px;
+  height: 144px;
+  margin: 0px auto;
+}
+
+.skills__item h2 {
+  margin: 1em auto;
+}
+
+.skills__item p {
+  margin: 0px auto;
+}
+
+/* -------END SKILLS----- */
+
+/* -------PROJECT----- */
+.projects__container {
+  min-width: 100%;
+  background-color: #fff;
+  color: #333;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.projects__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3em;
+  margin: 0px;
+  padding: 30px 0px;
+}
+
+.projects__container-grid {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(3, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  padding: 0px 50px;
+}
+
+.projects__item {
+  display: grid;
+  width: 350px;
+}
+
+.projects__container-grid .projects__item h2 {
+  margin: 15px auto;
+  text-align: center;
+  font-size: 1.4em;
+}
+.projects__container-grid .projects__item figure {
+  width: 270px;
+  height: 160px;
+}
+
+.projects__container-grid .projects__item img {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* -------END PROJECT----- */
+
+/* ------SECTION-ABOUT----- */
+.about__container {
+  min-width: 100%;
+  background-color: rgb(38, 196, 146);
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.about__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3em;
+  margin: 0px;
+  padding: 30px 0px;
+}
+
+.about__container-grid {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: 400px 1fr;
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 2% 2%;
+  padding: 0px 50px;
+}
+
+.about__container--img {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about__container--img figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about__container--img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.about__container--description div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about__container .about__container--description h2 {
+  margin: 5px auto 10px;
+  font-size: 1.6sem;
+}
+.about__container .about__container--description p {
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  margin: 0px;
+}
+
+/* ------END SECTION-ABOUT----- */
+
+/* ------GRID----- */
+
+/* ------CONTACT----- */
+
+.contact__container {
+  background: #2f3542;
+  color: #fff;
+}
+
+.contact__container-grid {
+  display: grid;
+  /* esto divide el contenido pero no sabe en cuantas partes*/
+  grid-template-columns: repeat(2, 1fr);
+  /* definimos en cuantas partes se divide, 5 veces se repite por 1 fraccion */
+  grid-gap: 2% 2%;
+}
+
+.contact__container--email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__container-grid .contact__container--email h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3em;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.contact__container-grid .contact__container--email h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3em;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.contact__container--icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__container--icons .container__icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+
+.contact__container-grid .contact__container--email div {
+  background-color: rgba(8, 8, 8, 0.808);
+  border: 2px solid rgb(55, 230, 176);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contact__container-grid .contact__container--email div a {
+  color: rgb(55, 230, 176);
+}
+
+.contact__container--cv h3 {
+  color: #fff;
+  font-size: 2em;
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.contact__container--cv:hover h3 {
+  color: rgb(55, 230, 176);
+  cursor: pointer;
+  margin: 0px;
+}
+
+.contact__container--icons .container__icons div {
+  margin: 10px 15px;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+.fa-github:hover {
+  color: #000000;
+}
+/* ------END CONTACT----- */
+
+/* ------FOOTER----- */
+
+.footer {
+  padding: 1vw 10%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+.copyright {
+  color: #777777;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: #eb5e28;
+}
+
+.heart {
+  color: #eb5e28;
+  animation: heathing 1s ease infinite;
+}
+
+@keyframes heathing {
+  0% {
+    transform: scale(0.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+/* ------END FOOTER----- */
+
+/* ANIMATIONS */
+
+/* Bounce In */
+/* .hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+} */
+
+/* Pulse Shrink */
+/* @-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+} */
+
+/* .hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse-shrink:hover,
+.hvr-pulse-shrink:focus,
+.hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+} */
