@@ -40,7 +40,7 @@ export default function Navbar() {
                 <Skeleton height={30} width={30} />
               </SkeletonTheme>
             ) : (
-              <Link href="/">
+              <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
                 <img src={url} alt="Logo" className={styles._logo_img} />
               </Link>
             )}
@@ -51,22 +51,22 @@ export default function Navbar() {
           ref={refContainerLinks}
           onClick={toggleCloseMenu}
         >
-          <Link href="/">
+          <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
             <a className={homePath} ref={refAnchor}>
               Home
             </a>
           </Link>
-          <Link href="/skills">
+          <Link href="/skills" as={`${process.env.ASSET_PREFIX}/skills`}>
             <a className={skillPath} ref={refAnchor}>
               Skills
             </a>
           </Link>
-          <Link href="/projects">
+          <Link href="/projects" as={`${process.env.ASSET_PREFIX}/projects`}>
             <a className={projectPath} ref={refAnchor}>
               Projects
             </a>
           </Link>
-          <Link href="/about">
+          <Link href="/about" as={`${process.env.ASSET_PREFIX}/about`}>
             <a className={aboutPath} ref={refAnchor}>
               About
             </a>
